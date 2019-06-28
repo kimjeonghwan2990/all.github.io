@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PLAYLIST - KYEONGSOO</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script type='text/javascript' src='./bower_components/jquery/dist/jquery.js'></script>
+    <script type='text/javascript' src='https://www.youtube.com/iframe_api'></script>
+    <!-- <link rel='stylehseet' href='./bower_components/swiper/dist/css/swiper.css'> -->
+    <!-- <script type='text/javascript' src='./bower_components/swiper/dist/js/swiper.js'></script> -->
+
+    <link rel='stylesheet' href='./styles.css'>
+
+    <script type='text/javascript' src='./index.js'></script>
+</head>
+<body>
+    <div class='background'>
+        <!-- 배경화면 부 -->
+        <div class='images honey'>
+                
+        </div>
+        <div class='cover'>
+
+        </div>
+    </div>
+    <a class='back-btn' href='../index.html'>
+        <i class="fas fa-arrow-circle-left"></i>
+    </a>
+    <div class='content'>
+        
+        <div class='video-container'>
+            <div class='video-area'>
+                <div id='video' class='video'></div>
+            </div>
+        </div>
+        <div class='info-container'>
+            <!-- 제목 -->
+            <p class='title'>
+                Honey
+            </p>
+            <!-- 가수 -->
+            <p class='artist'>
+                Johnny Balik
+            </p>
+            <div class='desc-container'>
+                <div class='desc'>
+                    <!-- 발매 일자 -->
+                    <p class='release-date'>
+                        2018. 7. 13.
+                    </p>
+                    <div class='lyrics-container'>
+                        <!-- 가사 삽입 부  -->
+                        <div class='lyrics slideup'>
+
+                        </div>
+                        <div class='lyrics-button' onclick='__global.fn.transition.slideLyrics()'>
+                            <i class='fas fa-angle-down'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 플레이리스트 목록 -->
+        <div class='list-container'>
+            
+        </div>
+    </div>
+          
+    <div class='template' style='display:none;'></div>
+</body>
+</html>

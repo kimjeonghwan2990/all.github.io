@@ -1,0 +1,17 @@
+{
+  "name": "study",
+  "main": "index.js",
+  "authors": [
+    "GOMJA-ROOM <machun3@naver.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

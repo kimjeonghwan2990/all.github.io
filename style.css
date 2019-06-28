@@ -1,0 +1,21 @@
+th {
+    width: 80px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+td{
+    font-size: 20px;
+    width: 80px;
+    height: 40px;
+    background-color: #f9cb6b;
+    color: white;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

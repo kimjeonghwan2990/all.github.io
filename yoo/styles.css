@@ -1,0 +1,281 @@
+/* ## COMMON ##############*/
+body{
+    height : 100%;
+    width : 100%;
+    margin : 0  !important;
+    padding : 0 !important;
+    background-color: #fff9de;
+}
+
+/* ## Background  ##############*/
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.background .images{
+    background-position: center;
+    background-size: cover;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    position: absolute;
+    width: 106%;
+    height: 106%;
+    top: -3%;
+    left: -3%;
+}
+
+.background .cover{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+}
+
+.background .images.honey{ background-image: url('./images/honey.jpg'); }
+.background .images.provider{ background-image: url('./images/provider.jpg'); }
+.background .images.itrunsthroughme{ background-image: url('./images/itrunsthroughme.jpg'); }
+.background .images.getyou{ background-image: url('./images/getyou.jpg'); }
+.background .images.sanfranciscostreet{ background-image: url('./images/sanfranciscostreet.jpg'); }
+.background .images.whyiiilovethemoon{ background-image: url('./images/whyiiilovethemoon.jpg'); }
+.background .images.love{ background-image: url('./images/love.jpg'); }
+.background .images.timeinatree{ background-image: url('./images/timeinatree.jpg'); }
+.background .images.imgood{ background-image: url('./images/imgood.jpg'); }
+.background .images.nostress{ background-image: url('./images/nostress.jpg'); }
+.background .images.pinemagic{ background-image: url('./images/pinemagic.jpg'); }
+.background .images.jieunssunset{ background-image: url('./images/jieunssunset.jpg'); }
+.background .images.sunflowerdance{ background-image: url('./images/sunflowerdance.jpg'); }
+
+a.back-btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/*  ## CONTENT ##############*/
+
+.content{
+    width: 560px;
+    height : 800px;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    margin-top : -400px;
+    margin-left : -280px;
+    box-shadow: 3px 9px 18px 10px rgba(0, 0, 0, .3);
+    background-color : #1b1d1d;
+    overflow-y : hidden;
+}
+
+.content .video-container{
+    width : 100%;
+    height: 315px;
+    background-color : #2e3131;
+}
+
+/* ## content - info */
+
+.content .info-container{
+    padding: 3%;
+    background-color: #2e3131;
+    color : white;
+}
+
+.content .info-container p {
+    padding: 0;
+    margin : 0;
+    width : fit-content;
+    height: fit-content;
+    color : #eeeeee;
+}
+
+.content .info-container .title{
+    font-size : 1.7em;
+    display: inline-flex;
+}
+
+.content .info-container .artist{
+    padding-top : .8em;
+    display: inline-flex;
+    right : 0;
+    position : absolute;
+    margin-right : 3%;
+}
+
+/* ## content - info - desc */
+
+.content .info-container .desc-container{
+    border-top: 1px solid #4c4c4c;
+    margin-top: 15px;
+}
+
+.content .info-container .desc-container .desc{
+    padding-top:2%;
+}
+
+.content .info-container .desc-container .desc .release-date{
+    font-size : .8em;
+}
+
+/* ## content - info - desc - lyrics */
+
+.content .info-container .desc-container .desc .lyrics-container{
+    text-align : center;
+    padding-top:2%;
+}
+
+.content .info-container .desc-container .desc .lyrics-container p{
+    width: auto;
+    text-align : center;
+}
+
+.content .info-container .desc-container .desc .lyrics-container .lyrics-button{
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+.content .info-container .desc-container .desc .lyrics-container .lyrics{
+    overflow-y :auto;
+}
+
+.slideup, .slidedown {
+    max-height: 0;            
+    overflow-y: hidden;
+    -webkit-transition: max-height 0.3s ease-in-out;
+    -moz-transition: max-height 0.3s ease-in-out;
+    -o-transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.content .info-container .desc-container .desc .lyrics-container .lyrics.slidedown{
+    max-height : 260px;
+}
+
+/* ## content - list */
+
+.content .list-container{
+    background-color : #1b1d1d;
+    max-height:330px;
+    overflow-y: auto;
+}
+
+.content .list-container .item{
+    color : #eee;
+    height : 72px;
+    padding : 0 15px;
+    border-top : 1px solid #2e3131;
+    position : relative;
+}
+
+.content .list-container .item.play.honey{ background : linear-gradient(to right, #966a30, #1b1e1e);}
+.content .list-container .item.play.provider{ background : linear-gradient(to right, #11405e, #1b1e1e); }
+.content .list-container .item.play.itrunsthroughme{ background : linear-gradient(to right, #916f2a, #1b1e1e);}
+.content .list-container .item.play.getyou{ background : linear-gradient(to right, #323832, #1b1e1e); } 
+.content .list-container .item.play.sanfranciscostreet{ background : linear-gradient(to right, #050306, #1b1e1e); } 
+.content .list-container .item.play.whyiiilovethemoon{ background : linear-gradient(to right, #5b6749, #1b1e1e); } 
+.content .list-container .item.play.love{ background : linear-gradient(to right, #322447, #1b1e1e); } 
+.content .list-container .item.play.timeinatree{ background : linear-gradient(to right, #161d4a, #1b1e1e); } 
+.content .list-container .item.play.imgood{ background : linear-gradient(to right, #8b3c54, #1b1e1e); } 
+.content .list-container .item.play.nostress{ background : linear-gradient(to right, #8e8045, #1b1e1e); } 
+.content .list-container .item.play.pinemagic{ background : linear-gradient(to right, #cf1565, #1b1e1e); } 
+.content .list-container .item.play.jieunssunset{ background : linear-gradient(to right, #554659, #1b1e1e); } 
+.content .list-container .item.play.sunflowerdance{ background : linear-gradient(to right, #4d330f, #1b1e1e); }
+
+.content .list-container .item p{
+    margin: 0;
+}
+
+.content .list-container .item .title {
+    margin-top: 12px;
+    font-size : 1.5em;
+}
+
+.content .list-container .item .artist{
+    font-size : .9em;
+    color:#999;
+}
+
+.content .list-container .item .social {
+    position : absolute;
+    top : 20px;
+    right : 20px;
+}
+
+.content .list-container .item .social a{
+    text-decoration: none;
+    color : #ff331b;
+    font-size : 1.8em;
+    margin-right : 10px;
+}
+
+.content .list-container .item .social a i.fa-facebook{ 
+    color : #606fc1; 
+}
+.content .list-container .item .social a i.fa-instagram{ 
+    /* color : #9c27b0;  */
+    background: linear-gradient(to bottom, #fbcac9, #8ca6ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content .list-container .item .social a i.fa-youtube-square{ color : #de1b1b; }
+.content .list-container .item .social a i.fa-share-square{ color : #efefef; }
+
+.content .list-container .item .thumbnail{
+    width : 90px;
+    height : 51px;
+    background-position :center;
+    background-size : contain;
+    float:left;
+    margin-top:11px;
+    margin-right : 25px;
+    text-align : center;
+    position:relative;
+}
+
+.content .list-container .item .thumbnail a{
+    position:absolute;
+    width : 100%;
+    height : 100%;
+    background-color : rgba(0,0,0,0.3);
+    opacity: 0;
+    left : 0;
+    transition: .3s;
+}
+
+.content .list-container .item .thumbnail a:hover{
+    opacity: 1;
+    transition: .3s;
+}
+
+.content .list-container .item .thumbnail i{
+    line-height : 52px;
+    text-decoration: none;
+    color : #eee;
+    font-size : 1.5em;
+}
+
+.content .list-container .item .thumbnail.honey{ background-image:url('./images/honey.jpg') }
+.content .list-container .item .thumbnail.provider{ background-image:url('./images/provider.jpg') }
+.content .list-container .item .thumbnail.itrunsthroughme{ background-image: url('./images/itrunsthroughme.jpg'); }
+.content .list-container .item .thumbnail.getyou{ background-image: url('./images/getyou.jpg'); }
+.content .list-container .item .thumbnail.sanfranciscostreet{ background-image: url('./images/sanfranciscostreet.jpg'); }
+.content .list-container .item .thumbnail.whyiiilovethemoon{ background-image: url('./images/whyiiilovethemoon.jpg'); }
+.content .list-container .item .thumbnail.love{ background-image: url('./images/love.jpg'); }
+.content .list-container .item .thumbnail.timeinatree{ background-image: url('./images/timeinatree.jpg'); }
+.content .list-container .item .thumbnail.imgood{ background-image: url('./images/imgood.jpg'); }
+.content .list-container .item .thumbnail.nostress{ background-image: url('./images/nostress.jpg'); }
+.content .list-container .item .thumbnail.pinemagic{ background-image: url('./images/pinemagic.jpg'); }
+.content .list-container .item .thumbnail.jieunssunset{ background-image: url('./images/jieunssunset.jpg'); }
+.content .list-container .item .thumbnail.sunflowerdance{ background-image: url('./images/sunflowerdance.jpg'); }
+
+/*  TEST */
+/* .content { background-color : #efefef; } */
+/* .content .video-container{ background-color : yellow; } */
